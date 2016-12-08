@@ -1,0 +1,6 @@
+framework module Pods_Back_Your_Watch {
+  umbrella header "Pods-Back_Your_Watch-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,9 +12,15 @@
 		C6307CCA1DF8AE4F00CD96D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6307CC81DF8AE4F00CD96D0 /* Main.storyboard */; };
 		C6307CCC1DF8AE4F00CD96D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6307CCB1DF8AE4F00CD96D0 /* Assets.xcassets */; };
 		C6307CCF1DF8AE4F00CD96D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6307CCD1DF8AE4F00CD96D0 /* LaunchScreen.storyboard */; };
+		C6307CD71DF8B04A00CD96D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6307CD61DF8B04A00CD96D0 /* GoogleService-Info.plist */; };
+		C6307CD91DF8BD6B00CD96D0 /* DisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6307CD81DF8BD6B00CD96D0 /* DisplayCell.swift */; };
+		DEB018122335D52B4DEEA8EE /* Pods_Back_Your_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E03D4C5AC090E8128E25793 /* Pods_Back_Your_Watch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E03D4C5AC090E8128E25793 /* Pods_Back_Your_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Back_Your_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC6FD6EADC62C6A523534F8 /* Pods-Back_Your_Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back_Your_Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Back_Your_Watch/Pods-Back_Your_Watch.release.xcconfig"; sourceTree = "<group>"; };
+		663EAA49CD286B6B07902121 /* Pods-Back_Your_Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Back_Your_Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Back_Your_Watch/Pods-Back_Your_Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		C6307CC11DF8AE4F00CD96D0 /* Back_Your_Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Back_Your_Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6307CC41DF8AE4F00CD96D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6307CC61DF8AE4F00CD96D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		C6307CCB1DF8AE4F00CD96D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6307CCE1DF8AE4F00CD96D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6307CD01DF8AE4F00CD96D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6307CD61DF8B04A00CD96D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C6307CD81DF8BD6B00CD96D0 /* DisplayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB018122335D52B4DEEA8EE /* Pods_Back_Your_Watch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56472E76711644AAEA3B16BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E03D4C5AC090E8128E25793 /* Pods_Back_Your_Watch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6307CB81DF8AE4F00CD96D0 = {
 			isa = PBXGroup;
 			children = (
 				C6307CC31DF8AE4F00CD96D0 /* Back_Your_Watch */,
 				C6307CC21DF8AE4F00CD96D0 /* Products */,
+				DA1B4908D765249AF71BBD22 /* Pods */,
+				56472E76711644AAEA3B16BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +79,19 @@
 				C6307CCB1DF8AE4F00CD96D0 /* Assets.xcassets */,
 				C6307CCD1DF8AE4F00CD96D0 /* LaunchScreen.storyboard */,
 				C6307CD01DF8AE4F00CD96D0 /* Info.plist */,
+				C6307CD61DF8B04A00CD96D0 /* GoogleService-Info.plist */,
+				C6307CD81DF8BD6B00CD96D0 /* DisplayCell.swift */,
 			);
 			path = Back_Your_Watch;
+			sourceTree = "<group>";
+		};
+		DA1B4908D765249AF71BBD22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				663EAA49CD286B6B07902121 /* Pods-Back_Your_Watch.debug.xcconfig */,
+				5EC6FD6EADC62C6A523534F8 /* Pods-Back_Your_Watch.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6307CD31DF8AE4F00CD96D0 /* Build configuration list for PBXNativeTarget "Back_Your_Watch" */;
 			buildPhases = (
+				7FE86742CC35165157A3522A /* [CP] Check Pods Manifest.lock */,
 				C6307CBD1DF8AE4F00CD96D0 /* Sources */,
 				C6307CBE1DF8AE4F00CD96D0 /* Frameworks */,
 				C6307CBF1DF8AE4F00CD96D0 /* Resources */,
+				A9A950AD90F654E03F86720F /* [CP] Embed Pods Frameworks */,
+				F06B1A816DC133F9F2A49FFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +158,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6307CCF1DF8AE4F00CD96D0 /* LaunchScreen.storyboard in Resources */,
+				C6307CD71DF8B04A00CD96D0 /* GoogleService-Info.plist in Resources */,
 				C6307CCC1DF8AE4F00CD96D0 /* Assets.xcassets in Resources */,
 				C6307CCA1DF8AE4F00CD96D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FE86742CC35165157A3522A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A950AD90F654E03F86720F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Back_Your_Watch/Pods-Back_Your_Watch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F06B1A816DC133F9F2A49FFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Back_Your_Watch/Pods-Back_Your_Watch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6307CBD1DF8AE4F00CD96D0 /* Sources */ = {
@@ -139,6 +221,7 @@
 			files = (
 				C6307CC71DF8AE4F00CD96D0 /* ViewController.swift in Sources */,
 				C6307CC51DF8AE4F00CD96D0 /* AppDelegate.swift in Sources */,
+				C6307CD91DF8BD6B00CD96D0 /* DisplayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +342,7 @@
 		};
 		C6307CD41DF8AE4F00CD96D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663EAA49CD286B6B07902121 /* Pods-Back_Your_Watch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L9N5DJLS38;
@@ -267,11 +351,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nathan.Back-Your-Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C6307CD51DF8AE4F00CD96D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC6FD6EADC62C6A523534F8 /* Pods-Back_Your_Watch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L9N5DJLS38;
@@ -280,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nathan.Back-Your-Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -302,6 +389,7 @@
 				C6307CD51DF8AE4F00CD96D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
