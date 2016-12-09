@@ -14,6 +14,7 @@
 		C6307CCF1DF8AE4F00CD96D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6307CCD1DF8AE4F00CD96D0 /* LaunchScreen.storyboard */; };
 		C6307CD71DF8B04A00CD96D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6307CD61DF8B04A00CD96D0 /* GoogleService-Info.plist */; };
 		C6307CD91DF8BD6B00CD96D0 /* DisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6307CD81DF8BD6B00CD96D0 /* DisplayCell.swift */; };
+		C6BDA1691DF9B8D500ECA666 /* PurchaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BDA1681DF9B8D500ECA666 /* PurchaseVC.swift */; };
 		DEB018122335D52B4DEEA8EE /* Pods_Back_Your_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E03D4C5AC090E8128E25793 /* Pods_Back_Your_Watch.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		C6307CD01DF8AE4F00CD96D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6307CD61DF8B04A00CD96D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C6307CD81DF8BD6B00CD96D0 /* DisplayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCell.swift; sourceTree = "<group>"; };
+		C6BDA1681DF9B8D500ECA666 /* PurchaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				C6307CD01DF8AE4F00CD96D0 /* Info.plist */,
 				C6307CD61DF8B04A00CD96D0 /* GoogleService-Info.plist */,
 				C6307CD81DF8BD6B00CD96D0 /* DisplayCell.swift */,
+				C6BDA1681DF9B8D500ECA666 /* PurchaseVC.swift */,
 			);
 			path = Back_Your_Watch;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				C6307CC71DF8AE4F00CD96D0 /* ViewController.swift in Sources */,
 				C6307CC51DF8AE4F00CD96D0 /* AppDelegate.swift in Sources */,
 				C6307CD91DF8BD6B00CD96D0 /* DisplayCell.swift in Sources */,
+				C6BDA1691DF9B8D500ECA666 /* PurchaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,8 +13,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var imageArray = [#imageLiteral(resourceName: "watch0.5x"), #imageLiteral(resourceName: "casper"), #imageLiteral(resourceName: "zorn"), #imageLiteral(resourceName: "goblin")]
-    var nameArray = ["App Logo", "Casper", "Zorn", "Goblin"]
+    var imageArray = [#imageLiteral(resourceName: "botch"), #imageLiteral(resourceName: "watch0.5x"), #imageLiteral(resourceName: "casper"), #imageLiteral(resourceName: "zorn"), #imageLiteral(resourceName: "goblin")]
+    var nameArray = ["Botch?", "App Logo?", "Casper", "Zorn", "Goblin"]
     var startingTouch: CGPoint?
     
     var newImage: UIImageView!
@@ -94,8 +94,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 8.0
         button.clipsToBounds = true
+        button.addTarget(self, action: #selector(goToPurchaseScreen), for: .touchUpInside)
         
         newImage.addSubview(button)
     }
+    
+    func goToPurchaseScreen() {
+        performSegue(withIdentifier: "Purchase", sender: nil)
+    }
+    
 }
 
